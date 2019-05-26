@@ -59,24 +59,6 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        //Initalize all variables at runtime
-        totalShot3 =  0
-        totalMade3 = 0
-        totalShot2 = 0
-        totalMade2 = 0
-        totalMade = 0
-        totalShot = 0
-        totalPoints = 0
-        shootingPercent = 0.0
-        eshootingPercent = 0.0
-        totalAssists = 0
-        totalTurnovers = 0
-        
-    }
     
     //Manages Three Point Attempt
     @IBAction func threeAttemptButton(_ sender: Any) {
@@ -112,7 +94,7 @@ class ViewController: UIViewController {
     }
     
     
- 
+    
     //Manages Two Point Attempt
     
     @IBAction func twoAttemptButton(_ sender: Any) {
@@ -155,7 +137,7 @@ class ViewController: UIViewController {
         
         let make = UIAlertAction(title: "Make", style: .default) { action in
             self.totalPoints += 1
-
+            
             
         }
         let miss = UIAlertAction(title: "Miss", style: .default) { action in
@@ -207,7 +189,7 @@ class ViewController: UIViewController {
     //Manages About Screen
     @IBAction func aboutButton(_ sender: Any) {
         let alertController = UIAlertController(title: "About BBaskets", message:
-            "Bootso Baskets 1.1\n Created in Virginia by William Brannock\n www.williambrannock.com", preferredStyle: .alert)
+            "Bootso Baskets 2.1\n Created in Virginia by William Brannock\n www.williambrannock.com", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
         
         self.present(alertController, animated: true, completion: nil)
@@ -246,8 +228,35 @@ class ViewController: UIViewController {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
+        //Initalize all variables at runtime
+        totalShot3 =  0
+        totalMade3 = 0
+        totalShot2 = 0
+        totalMade2 = 0
+        totalMade = 0
+        totalShot = 0
+        totalPoints = 0
+        shootingPercent = 0.0
+        eshootingPercent = 0.0
+        totalAssists = 0
+        totalTurnovers = 0
         
+        //Label stuff
+        //pointsLabel.layer.borderWidth = 1.2
+        //pointsLabel.layer.borderColor = UIColor.black.cgColor
+        
+       
+        
+    }
+    
+
     
     
 
