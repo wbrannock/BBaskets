@@ -189,7 +189,7 @@ class ViewController: UIViewController {
     //Manages About Screen
     @IBAction func aboutButton(_ sender: Any) {
         let alertController = UIAlertController(title: "About BBaskets", message:
-            "Bootso Baskets 2.1\n Created in Virginia by William Brannock\n www.williambrannock.com", preferredStyle: .alert)
+            "Bootso Baskets 2.0\n Created in Virginia by William Brannock\n www.williambrannock.com", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
         
         self.present(alertController, animated: true, completion: nil)
